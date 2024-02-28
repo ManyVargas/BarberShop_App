@@ -1,0 +1,24 @@
+{
+  "name": "app_peluqueria_mevn_backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend para App de la peluqueria en MEVN",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManyVargas/App_Peluqueria.git"
+  },
+  "author": "Manuel Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManyVargas/App_Peluqueria/issues"
+  },
+  "homepage": "https://github.com/ManyVargas/App_Peluqueria#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
