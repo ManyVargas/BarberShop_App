@@ -1,10 +1,24 @@
-import express, { Router } from 'express'
-import {createService, getServices } from '../controllers/servicesController.js'
+import express from 'express'
+import {
+  createService,
+  getServices,
+  getServiceById,
+  updateService,
+  deleteService,
+} from "../controllers/servicesController.js";
 
 const router = express.Router();
 
-router.post("/", createService);
-router.get("/", getServices);
+
+router.route("/")
+  .post(createService)
+  .get(getServices)
+
+router.route('/:id')
+  .get(getServiceById)
+  .put(updateService)
+  .delete(deleteService)
+
 
 
 export default router;
