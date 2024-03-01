@@ -7,8 +7,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "seed:import" : "node data/seed.js --import",
-    "seed:destroy" : "node data/seed.js --destroy"
+    "dev:postman": "node --watch index.js --postman",
+    "seed:import": "node data/seed.js --import",
+    "seed:destroy": "node data/seed.js --destroy"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
   },
   "homepage": "https://github.com/ManyVargas/App_Peluqueria#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.11"
   }
 }
