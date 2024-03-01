@@ -11,7 +11,7 @@ export const useUserStore = defineStore('user', () => {
   onMounted(async () => {
     try {
       const { data } = await AuthAPI.auth()
-      user.value = data
+      user.value = data.user
     } catch (error) {
       console.log(error);
     }
@@ -23,7 +23,7 @@ export const useUserStore = defineStore('user', () => {
     router.push({name: 'login'})
   }
 
-  const getUserName = computed(() => user.value?.name ? user.value?.name : ' ')
+  const getUserName = computed(() => user.value?.name ? user.value.name : ' ')
 
 
   return {
