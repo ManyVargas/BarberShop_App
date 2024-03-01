@@ -3,7 +3,7 @@ import {
   register,
   verifyAccount,
   login,
-  user
+  user 
 } from "../controllers/authController.js";
 import authMiddleware from '../middleware/authMiddleware.js'
  
